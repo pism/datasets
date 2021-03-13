@@ -1,7 +1,7 @@
 name,coast,ID
 Vestfjord Gl.,CE,GGN0275
-F. Graae Gl.,CE,GGN0394
-Deception O Gl. CN,CE,FISCH001
+!F. Graae Gl.,CE,GGN0394
+!Deception O Gl. CN,CE,FISCH001
 Frederiksborg Gl.,CE,GGN0211
 Perlerfiup Se.,CW,GGN0303
 Sermeq Avannarleq,CW,GGN0305
@@ -15,11 +15,45 @@ Gerard de Geer Gl.,NE,GGN0494
 Ussing Br.,NW,GGN0500
 Kong Oscar Gl.,NW,GGN0553
 Morell Gl.,NW,GGN0573
-Nordenskiold Gl. N,NW,NORD001
+!Nordenskiold Gl. N,NW,NORD001
 Upernavik Isstrom SS,NW,GGN0452
-Rimfaxe Gl.,SE,GGN0060
-Koge Bugt Gl. C,SE,FISCH002
+!Rimfaxe Gl.,SE,GGN0060
+!Koge Bugt Gl. C,SE,FISCH002
 Midgard Gl.,SE,GGN0168
 Kangiata Nunaata Se.,SW,GGN0094
-Eqalorutsit Kangilliit Se.,SW,GGN0041
-Ukaasorsuaq,SW,FISCH003
+!Eqalorutsit Kangilliit Se.,SW,GGN0041
+!Ukaasorsuaq,SW,FISCH003
+Rink Isbrae,CW,GGN0347
+Store Gl.,CW,GGN0279
+Jakobshavn Isbrae,CW,GGN0235
+Helheim Gl.,SE,GGN0163
+Skinfaxe Gl.,SE,GGN0059
+Kangerlussuaq Gl.,CE,GGN0218
+Upernavik Isstrom N,NW,GGN0452N
+Upernavik Isstrom C,NW,GGN0452C
+Upernavik Isstrom S,NW,GGN0452S
+
+# Glaciers we KNOW we want
+(('Rink Isbrae', 'RINK_ISBRAE'), 'GGN0347',),
+(('Store Gl.', 'STORE_GLETSCHER'), 'GGN0279',),
+(('Jakobshavn Isbrae', 'JAKOBSHAVN_ISBRAE'), '',),
+(('Helheim Gl.', 'HELHEIMGLETSCHER'), 'GGN0235',),
+(('Skinfaxe Gl.', 'SKINFAXE'), 'GGN0059',),
+(('Kangerlussuaq Gl.', 'KANGERLUSSUAQ'), 'GGN0218',),
+(('Upernavik Isstrom N', 'UPERNAVIK_ISSTROM_N'), '',),
+(('Upernavik Isstrom C', 'UPERNAVIK_ISSTROM_C'), '',),
+(('Upernavik Isstrom S', 'UPERNAVIK_ISSTROM_S'), '',),
+
+# Zero matches with bkm15
+(('F. Graae Gl.', 'F_GRAAE'),GGN0394
+(('Deception O Gl. CN', 'UNNAMED_DECEPTION_O_CN_CS'),FISCH001
+(('Nordenskiold Gl. N', 'NORDENSKIOLD_GLESCHER_NW', '', 75.834,-59.073),
+(('Rimfaxe Gl.', 'RIMFAXE'), 'GGN0060',
+(('Koge Bugt Gl. C', 'KOGE_BUGT_C'),FISCH002
+(('Eqalorutsit Kangilliit Se.', 'QAJUUTTAP_SERMIA'),GGN0041
+(('Ukaasorsuaq', 'UKAASORSUAQ'),FISCH003
+
+# More than one match with bkm15
+(('Diebitsch Gl.', 'DIEBITSCH'), ('GGN0658',)),
+(('Sermeq Avannarleq', 'SERMEQ_AVANNARLEQ'), ('GGN0240',)),
+(('Ussing Br.', 'USSING_BRAEER'), ('GGN0498',)),

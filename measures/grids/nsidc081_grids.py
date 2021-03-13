@@ -399,6 +399,19 @@ def main(argv=None):
                               filename_filter=filename_filter, quiet=quiet)
 
 
+    # Debug: List just files with one grid
+    if True:
+        for url in url_list:
+            leaf = os.path.split(urlparse(url).path)[1]
+            match = reNSIDC.match(leaf)
+            if match is None:
+                continue
+            grid = match.group(2)
+            if grid == 'E63.00N':
+                print(url)
+
+        return
+
     # Now parse the URL list to find just one file from each grid
     grid_samples = dict()
     for url in url_list:
